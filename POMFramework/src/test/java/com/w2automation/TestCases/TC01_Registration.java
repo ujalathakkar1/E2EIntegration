@@ -19,7 +19,7 @@ public class TC01_Registration extends Base{
 		System.out.println("email is:"+ email +fname+lname+pass+address+city+state+postcode+phone);
 		RegistrationPage r1=new RegistrationPage(driver);
 		r1.clickSignIn();
-		System.out.println("hi1");
+		System.out.println("hi12");
 		r1.enteremail(email);
 		r1.SubmitBtn();
 		Thread.sleep(5000);
