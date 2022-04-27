@@ -19,7 +19,7 @@ public class TC01_Registration extends Base{
 		System.out.println("email is:"+ email +fname+lname+pass+address+city+state+postcode+phone);
 		RegistrationPage r1=new RegistrationPage(driver);
 		r1.clickSignIn();
-		System.out.println("hi12");
+		
 		r1.enteremail(email);
 		r1.SubmitBtn();
 		Thread.sleep(5000);
@@ -28,14 +28,14 @@ public class TC01_Registration extends Base{
 		r1.enterPassword(pass);
 		r1.enterAddress(address);
 		r1.enterCity(city);
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		r1.SelectState(state);
 		r1.enterpostcode(postcode);
 		r1.enterPhone(phone);
 		r1.SubmitAccount();
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		r1.clickLogout();
-		Thread.sleep(4000);
+		//Thread.sleep(4000);
 		
 		
 		

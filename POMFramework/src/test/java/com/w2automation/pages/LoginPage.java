@@ -72,5 +72,23 @@ public class LoginPage {
 			Assert.fail();
 		}
 		}
+	public void clickLogout() throws IOException {
+		try
+		{
+			action.clickbtn(driver.findElement(By.cssSelector(Utility.fetchLocatorValue("Logout_css"))));
+
+		// driver.findElement(By.cssSelector(Utility.fetchLocatorValue("Logout_css"))).click();
+
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("******************Exception**************");
+			e.printStackTrace();
+			CaptureScreenshots.TakeScreenshots(driver, "Login error");
+			Assert.fail();
+		}
+		
+	}
 
 }

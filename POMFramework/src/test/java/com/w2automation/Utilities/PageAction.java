@@ -20,7 +20,7 @@ public class PageAction {
 	{
 		this.driver=driver;
 		
-		 wait = new WebDriverWait(driver,30);
+		 wait = new WebDriverWait(driver,80);
 	}
 	
 	
@@ -35,7 +35,7 @@ public class PageAction {
 	
 	public void enteredDataintotxtbox(WebElement element,String text)
 	{
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.sendKeys(text);
 	}
 	public void selectedvisibletextDropdown(WebElement element,String text)

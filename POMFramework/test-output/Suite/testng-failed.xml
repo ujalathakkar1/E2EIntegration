@@ -11,7 +11,7 @@
         <methods>
           <include name="InitializeBrowser"/>
           <include name="closeBrowser"/>
-          <include name="doRegistration" invocation-numbers="0 1 2"/>
+          <include name="doRegistration" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.w2automation.TestCases.TC01_Registration -->
     </classes>
