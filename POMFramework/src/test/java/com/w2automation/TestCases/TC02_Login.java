@@ -13,7 +13,7 @@ public class TC02_Login extends Base{
 	@Test(priority = 2,dataProvider="dp",dataProviderClass=Datagen.class)
 	public void doLogin(String email,String pass) throws IOException, InterruptedException
 	{
-		System.out.println(email+"and"+pass);
+		//System.out.println(email+"and"+pass);
 		LoginPage l1=new LoginPage(driver);
 		l1.enterusername(email);
 		l1.enterpassword(pass);

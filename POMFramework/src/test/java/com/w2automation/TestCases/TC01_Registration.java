@@ -16,7 +16,6 @@ public class TC01_Registration extends Base{
 	@Test(priority = 1,dataProvider="dp",dataProviderClass=Datagen.class)
 	public void doRegistration(String email,String fname,String lname,String pass,String address,String city,String state,String postcode,String phone) throws IOException, InterruptedException
 	{
-		System.out.println("email is:"+ email +fname+lname+pass+address+city+state+postcode+phone);
 		RegistrationPage r1=new RegistrationPage(driver);
 		r1.clickSignIn();
 		

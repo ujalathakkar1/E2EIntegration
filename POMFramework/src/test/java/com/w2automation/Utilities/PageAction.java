@@ -20,6 +20,7 @@ public class PageAction {
 	{
 		this.driver=driver;
 		
+		
 		 wait = new WebDriverWait(driver,80);
 	}
 	
@@ -38,6 +39,9 @@ public class PageAction {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		element.sendKeys(text);
 	}
+	
+	
+	
 	public void selectedvisibletextDropdown(WebElement element,String text)
 	{
 		wait.until(ExpectedConditions.textToBePresentInElement(element, text));

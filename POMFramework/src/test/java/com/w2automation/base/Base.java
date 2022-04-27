@@ -49,8 +49,8 @@ public class Base {
 		
 		driver.get(Utility.fetchApplicationValue("Application_url"));
 		driver.manage().window().maximize();
-		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-		//driver.manage().window().Timeout().ImplicitlyWait(TimeUnit.SECONDS,20);
+		//driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		//driver.manage().Timeout().ImplicitlyWait(TimeUnit.SECONDS,20);
 		
 		
 	}

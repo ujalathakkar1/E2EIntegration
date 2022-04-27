@@ -18,6 +18,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver)
 	{
 		this.driver=driver;
+		
 		action=new PageAction(driver);
 	}
 	
@@ -55,6 +56,9 @@ public class LoginPage {
 			Assert.fail();
 		}
 			}
+	
+	
+	
 	
 	public void dologin() throws IOException
 	{
